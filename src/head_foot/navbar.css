@@ -1,0 +1,209 @@
+/* ✅ Navbar container */
+.navbar {
+  background-color: #1e3a8a;
+  padding: 16px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* ✅ Navbar inner container */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* ✅ Logo */
+.logo {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* ✅ Desktop Menu */
+.nav-menu {
+  display: flex;
+  gap: 24px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.2s;
+}
+
+.nav-link:hover {
+  color: #cbd5e1;
+}
+
+/* ✅ Dropdown */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-btn {
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.icon {
+  transition: transform 0.3s ease;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+/* ✅ Desktop Dropdown */
+.dropdown-content {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 6px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  width: 180px;
+  z-index: 10;
+}
+
+.dropdown-content.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.dropdown-item {
+  padding: 12px;
+  color: #1e293b;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.2s ease;
+}
+
+.dropdown-item:hover {
+  background-color: #f1f5f9;
+}
+
+/* ✅ Mobile Menu Button */
+.menu-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+}
+
+/* ✅ Mobile Menu */
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  background-color: #1e3a8a;
+  padding: 16px;
+}
+
+.mobile-menu.active {
+  display: flex;
+}
+
+.mobile-link {
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px solid #3b82f6;
+  transition: background-color 0.2s;
+}
+
+.mobile-link:hover {
+  background-color: #1c3a79;
+}
+
+/* ✅ Mobile Dropdown */
+.mobile-dropdown-content {
+  display: none;
+  padding-left: 16px;
+}
+
+.mobile-dropdown-content.show {
+  display: block;
+}
+
+.mobile-dropdown-item {
+  padding: 12px;
+  color: #f1f5f9;
+  background-color: #1c3a79;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.2s ease;
+}
+
+.mobile-dropdown-item:hover {
+  background-color: #334155;
+}
+
+/* ✅ Responsive Styles */
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+  .dropdown-content {
+    display: none;
+  }
+}
+/* ✅ Sticky Navbar */
+.navbar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-color: transparent; /* Transparent by default */
+  transition: background-color 0.5s ease, transform 0.5s ease;
+}
+
+.navbar.scrolled {
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #1e3a8a; /* Solid background when scrolled */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+  transform: translateY(0); 
+
+}
+
+/* ✅ Sticky Navbar */
+/* 
+.navbar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-color: transparent;
+  transition: background-color 0.5s ease, transform 0.5s ease;
+  transform: translateY(-100%); 
+}
+
+.navbar.scrolled {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #1e3a8a; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transform: translateY(0); 
+  z-index: 100;
+} */

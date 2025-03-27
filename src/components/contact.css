@@ -1,0 +1,148 @@
+/* ✅ General Styling */
+.contact-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* ✅ Header */
+  .contact-header {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 16px;
+  }
+  
+  /* ✅ Contact Details */
+  .contact-details p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 8px;
+  }
+  
+  /* ✅ Form Styling */
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .contact-form label {
+    font-size: 14px;
+    color: #444;
+    font-weight: 500;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.2s ease-in-out;
+  }
+  
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    border-color: #007bff;
+  }
+  
+  /* ✅ Submit Button */
+  .contact-button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .contact-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* ✅ ✅ Responsive Styling */
+  
+  /* 🔹 Tablet View (768px and below) */
+  @media (max-width: 768px) {
+    .contact-container {
+      padding: 16px;
+      margin: 20px;
+    }
+  
+    .contact-header {
+      font-size: 22px;
+      text-align: center;
+    }
+  
+    .contact-details p {
+      font-size: 14px;
+    }
+  
+    .contact-form input,
+    .contact-form textarea {
+      font-size: 14px;
+      padding: 10px;
+    }
+  
+    .contact-button {
+      font-size: 14px;
+      padding: 10px;
+    }
+  }
+  
+  /* 🔹 Mobile View (480px and below) */
+  @media (max-width: 480px) {
+    .contact-container {
+      padding: 12px;
+      margin: 16px;
+    }
+  
+    .contact-header {
+      font-size: 20px;
+    }
+  
+    .contact-details p {
+      font-size: 12px;
+    }
+  
+    .contact-form input,
+    .contact-form textarea {
+      font-size: 14px;
+      padding: 8px;
+    }
+  
+    .contact-button {
+      font-size: 14px;
+      padding: 10px;
+    }
+  }
+Link{
+    text-decoration: none;
+}  
+
+
+.bg_contact1{
+  padding-top: 100px;
+  color: white;
+}
+.bg_contact{
+  /* margin-top: 30px; */
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../img/farm_contact.jpg');
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+  /* margin: auto;
+  display: block; */
+  /* color: #f5f3f3; */
+  /* padding: 100px 20px; */
+  text-align: center;
+}
