@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
-import './Footer.css';
+import './footer.css';
 
 const Footer = () => {
   return (
