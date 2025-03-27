@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Navbar from '../head_foot/Navbar';
 import Footer from '../head_foot/Footer';
 
-import './Contact.css';
+import './contact.css';
 
 const Contact = () => {
   const [formData, setFormData] = useState({name: '', email: '', message: '' });
